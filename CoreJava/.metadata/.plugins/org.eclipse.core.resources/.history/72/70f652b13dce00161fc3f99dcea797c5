@@ -1,0 +1,12 @@
+package ademo;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s="jghgu";
+		System.out.println(s.indexOf('h'));
+	}
+
+}

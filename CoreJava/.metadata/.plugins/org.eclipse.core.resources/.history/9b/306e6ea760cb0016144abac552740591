@@ -1,0 +1,18 @@
+package collections;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ibm.First;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ac= new ClassPathXmlApplicationContext("appContext.xml");
+		State first= ac.getBean("karnataka", First.class);
+		first.setMsg("first from java");
+		
+	}
+
+}

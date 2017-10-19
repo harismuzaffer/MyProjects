@@ -1,0 +1,26 @@
+package ademo;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap newmap = new HashMap();
+	      
+		   // populate hash map
+		   newmap.put(1, "tutorials");
+		   newmap.put(2, "point");
+		   newmap.put(3, "is best");
+		      
+		   // create set view for the map
+		   Set set=newmap.entrySet();
+		      
+		   // check set values
+		   System.out.println("Set values: " + set);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.ibm;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestFirst {
+
+	public static void main(String[] args) {
+		ApplicationContext ac= new ClassPathXmlApplicationContext("appContext.xml");
+		First first= ac.getBean("first", First.class);
+		first.welcome();
+		
+	}
+
+}

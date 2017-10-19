@@ -1,0 +1,34 @@
+package services;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import dao.HistoryDAO;
+import dao.ParkingDAO;
+import models.HistoryParking;
+import models.Parking;
+
+public class Deallocate {
+	
+	@Autowired
+	HistoryDAO hdao;
+	@Autowired
+	ParkingDAO pdao;
+	
+	public HistoryParking updateHistoryParking(int slotId){
+		
+		Parking p= pdao.getParkInfoBySlot(slotId);
+		HistoryParking hp= new HistoryParking();
+		hp.setPark(p);
+		DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+		Calendar calobj = Calendar.getInstance();
+		hp.setExitTime(df.format(calobj.getTime()));
+		hdao.insert(hp);
+				)
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package ademo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo{
+
+	public static void main(String[] args) {
+		Demo d= new Demo();
+		System.out.println(d.getClass());
+		Class c= d.getClass();
+		System.out.println(c.getName());
+		List<Object> l= new ArrayList<Integer>();
+	}
+}

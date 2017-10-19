@@ -1,0 +1,43 @@
+package models;
+
+public class User 
+{
+	private String uid;
+	private String uname;
+	private String pwd;
+	private String userRole;
+	
+	
+	public String getUserId()
+	{
+		return userId;
+	}
+	public String getUserName() 
+	{
+		return uname;
+	}
+	public String getPassword() 
+	{
+		return password;
+	}
+	public String getUserRole() 
+	{
+		return userRole;
+	}
+	public void setUserId(String userId) 
+	{
+		this.userId = userId;
+	}
+	public void setUserName(String userName) 
+	{
+		this.uname = userName;
+	}
+	public void setPassword(String password) 
+	{
+		this.password = password;
+	}
+	public void setUserRole(String userRole) 
+	{
+		this.userRole = userRole;
+	}	
+}

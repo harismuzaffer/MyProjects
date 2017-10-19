@@ -1,0 +1,31 @@
+package ademo;
+
+import java.util.*;
+
+public class StringOccurancesII {
+
+	public static void main(String[]args){
+
+		Scanner in= new Scanner(System.in);
+		String s1= in.nextLine();
+		String s2= in.nextLine();
+		System.out.print(getSubstring(s1, s2));
+		
+	}
+	
+	public static int getSubstring(String s, String s1)
+	{
+		
+		int c=0;
+		int l= 0;
+		String h= s1.substring(0);
+		while(h.indexOf(s)>s.length()){
+			if(h.contains(s))
+				c++;
+			h= h.substring(h.indexOf(s));
+			
+		}
+		return 1;
+		
+	}
+}

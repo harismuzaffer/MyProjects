@@ -1,0 +1,27 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h3>CountryList</h3>
+<ul>
+<c:forEach var="ctry" items="${ctryList }" varStatus="st">
+	<c:choose>
+		<c:when test="${st.count%2==0}">
+			<li style="background-color:lightgray">
+		</c:when>
+		<c:otherwise>
+			<li style="background-color:lightblue">
+		</c:otherwise>
+	</c:choose>
+		${ctry.countryId} | ${ctry.countryName} | ${ctry.regionId} 
+</c:forEach>
+</ul>
+
+</body>
+</html>

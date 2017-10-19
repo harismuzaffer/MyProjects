@@ -1,0 +1,33 @@
+package ademo;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo {
+
+	public static void main(String[] args) {
+	hh h= new hhh();
+	try {
+		System.out.println(h.dd());
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+	}
+}
+class hh{
+	
+	hh dd() throws IOException{
+		System.out.println("hh");
+		return this;
+	}
+	
+}
+class hhh extends hh{
+	
+	void dd() throws IOException{
+		System.out.println("hhh");
+	}
+}

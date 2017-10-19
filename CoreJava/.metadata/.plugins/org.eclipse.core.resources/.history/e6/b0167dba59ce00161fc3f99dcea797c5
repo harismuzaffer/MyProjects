@@ -1,0 +1,30 @@
+package ademo;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Demo extends Thread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runnable r= new R();
+		Thread t = new Thread(r);
+		t.start();
+		new Demo().start();
+	}
+	public void run() {
+		System.out.println("trnjug");
+		
+	}
+
+}
+class R implements Runnable{
+
+	@Override
+	public void run() {
+		System.out.println("riunning");
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Allocate</title>
+</head>
+<body>
+
+<form action="validate" method="post">
+
+	MobileNo<input type="text" name="mno"> <br>
+	SlotType<input type="slotType" name="pwd"> <br>
+	<input type="submit" value="Login">
+	
+</form>
+
+
+</body>
+</html>

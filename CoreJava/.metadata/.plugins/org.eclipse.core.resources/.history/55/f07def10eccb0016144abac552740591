@@ -1,0 +1,20 @@
+package com.she;
+
+public class Address {
+
+	private String city;
+
+	public Address(String city) {
+		this.city = name;
+	}
+
+	public String getName() {
+		return city;
+	}
+
+	public void setName(String city) {
+		this.city = city;
+	}
+	
+	
+}

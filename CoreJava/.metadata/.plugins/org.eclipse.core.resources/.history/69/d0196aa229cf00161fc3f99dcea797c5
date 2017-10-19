@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>login</title>
+</head>
+<body>
+
+<form action="/validate">
+
+	Username<input type="text" name="uname"> <br>
+	Password<input type="password" name="pwd"> <br>
+	<input type="submit" value="Login">
+
+</form>
+</body>
+</html>

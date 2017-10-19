@@ -1,0 +1,45 @@
+package ademo;
+
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.Vector;
+
+public class Demo{
+
+	public static void main(String[] args) {
+		ArrayList<Integer> l= new ArrayList<Integer>();
+		List<Integer> ll= new ArrayList<Integer>();
+		Vector<Integer> v= new Vector<Integer>(2);
+		v.add(34);
+		v.add(56);
+		v.add(34);
+		System.out.println(v.capacity());
+		Set<Integer> s= new HashSet<Integer>();
+		Set<String> sss= new HashSet<String>();
+		sss.add("hfj");
+		HashSet<Integer> ss= new HashSet<Integer>();
+		s.add(34000);
+		s.add(88000);
+		l.addAll(s);
+		l.add(23);
+		l.add(596);
+		l.add(263);
+		l.add(null);
+		l.add(566);
+		l.add(null);
+		System.out.println(l.containsAll(sss));
+		
+	}
+}

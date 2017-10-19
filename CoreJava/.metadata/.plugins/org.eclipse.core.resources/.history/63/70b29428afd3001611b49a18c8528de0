@@ -1,0 +1,26 @@
+package ademo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo {
+
+	public static void main(String[] args) {
+	hhh h= new hh();
+	h.dd();
+		
+	}
+}
+class hhh{
+	
+	void dd(){
+		System.out.println("hh");
+	}
+	
+}
+class hhh extends hh{
+	
+	void dd(){
+		System.out.println("hhh");
+	}
+}

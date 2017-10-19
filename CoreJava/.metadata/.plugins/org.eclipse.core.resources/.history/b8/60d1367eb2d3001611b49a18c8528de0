@@ -1,0 +1,27 @@
+package ademo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo extends Thread{
+
+	public static void main(String[] args) {
+		hh t= new hh();
+		Thread d= new Thread(t);
+		d.setName("jfd");
+		d.start();
+		//System.out.println(Thread.currentThread().getName());
+	}
+	public void run(){
+		System.out.println("heooolle");
+	}
+}
+class hh implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("hhhh");
+	}
+	
+}

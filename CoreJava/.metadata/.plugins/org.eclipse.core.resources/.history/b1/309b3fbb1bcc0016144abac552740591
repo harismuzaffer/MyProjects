@@ -1,0 +1,34 @@
+package jdbc;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CountryDao {
+
+	private JdbcTemplate template;
+
+	public JdbcTemplate getTemplate() {
+		return template;
+	}
+	
+	@Autowired
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+	}
+	
+	public int countCountry(){
+		String s= "select count(*) from countries";
+		return template.queryForObject(s, Integer.class);
+	}
+	
+	public boolean insertCountry(Country c){
+		String s= "insert into countries values(?,?,?)";
+		int count= template.update(s, c.getCountryId(), c.getCountryName(), c.getRegionId());
+		if(count>0)
+			return true;
+		else
+			return false;
+	}
+}

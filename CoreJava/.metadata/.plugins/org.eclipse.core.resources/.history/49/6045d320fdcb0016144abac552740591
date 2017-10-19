@@ -1,0 +1,20 @@
+package com.she;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import collections.State;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ApplicationContext ac= new ClassPathXmlApplicationContext("com/she/customer.xml");
+		Customer k= ac.getBean("customer1", Customer.class);
+		k.setName("jijihi");
+		System.out.println(k.getName());
+		for(Address city: k.getAdd())
+			System.out.println(city.getCity());
+		
+	}
+
+}

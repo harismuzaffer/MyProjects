@@ -1,0 +1,47 @@
+package aop;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+
+@Aspect
+@Component
+public class LoggingAspect {
+	
+	@Pointcut("execution(* *.withdraw(..))")
+	public void withdraw(){}
+	
+	@Before("execution(* *.deposit(..)) && args(amt)")
+	public void logAdviceforDeposit(double amt){
+		System.out.println("logging before depositing "+amt);
+	}
+	
+//	@After("withdraw()")
+//	public void logAfterWithdrawal(){
+//		System.out.println("logging after withdrawal");
+//	}
+//	
+//	@Before("withdraw()")
+//	public void logBeforeWithDrawal(){
+//		System.out.println("logging before withdrawal");
+//	}
+	
+	@Around("withdraw()")
+	public void logBeforeWithdrawal(ProceedingJoinPoint point){
+		
+		//Before
+		try {
+			point.proceed();
+		} catch (Throwable e) {
+			//AfterThrowing
+			System.out.println("");
+		}
+		//After
+	}
+
+}

@@ -1,0 +1,38 @@
+package ademo;
+
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class Demo{
+
+	public static void main(String[] args) {
+		List<Integer> set= new ArrayList<Integer>();
+		set.add(23);
+		set.add(56);
+		set.add(263);
+		set.add(566);
+		set.add(null);
+		set.add(null);
+		Collections.addAll(set, 456, 666);
+		System.out.println(set);
+		Map<Integer, String> dd= new TreeMap<Integer, String>();
+		dd.put(45, "4564");
+		dd.put(null, null);
+		System.out.println(dd);
+		
+		
+	}
+
+}

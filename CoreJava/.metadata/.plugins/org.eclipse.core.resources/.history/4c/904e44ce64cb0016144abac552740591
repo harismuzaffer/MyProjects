@@ -1,0 +1,24 @@
+package com.she;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import collections.State;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		ApplicationContext ac= new ClassPathXmlApplicationContext("collections/beans.xml");
+//		//Customer= ac.getBean("karnataka", State.class);
+//		System.out.println(k.getStateName());
+//		for(String city: k.getCities())
+//			System.out.println(city);
+		String s="hkjhfgf g";
+		String ss[]=s.split("-", 2);
+		for(String sss: ss)
+		System.out.println(sss);
+		
+	}
+
+}

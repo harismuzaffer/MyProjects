@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Allocate</title>
+</head>
+<body>
+
+<form action="validate" method="post">
+
+	Username<input type="text" name="uid"> <br>
+	Password<input type="password" name="pwd"> <br>
+	<input type="submit" value="Login">
+	
+</form>
+
+
+</body>
+</html>

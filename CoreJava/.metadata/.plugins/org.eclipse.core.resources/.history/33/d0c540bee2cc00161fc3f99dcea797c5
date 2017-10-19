@@ -1,0 +1,15 @@
+package controllers;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class CountryHandler {
+
+	@RequestMapping("/listCountries")
+	public String listCountries(Model model){
+		
+		List<Country> 
+		return "countryList"; 
+	}
+}
+

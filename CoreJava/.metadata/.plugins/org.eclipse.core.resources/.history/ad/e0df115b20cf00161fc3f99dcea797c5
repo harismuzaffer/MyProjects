@@ -1,0 +1,18 @@
+package daoInterfaces;
+
+public interface parkingDao {
+	
+	public boolean allocateParking(Parking p);
+	
+	public boolean addNewSlot(String vehicleType);
+	
+	public boolean Block(String slotID)();
+	
+	public Parking getParkInfo(String vehicleRegNo);
+	
+	public boolean deallocateParking(String slotID);
+	
+	public int totalSlots(String vehicleType);
+	
+	public int availableSlots(String vehicleType);
+}

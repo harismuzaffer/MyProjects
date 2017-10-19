@@ -1,0 +1,32 @@
+package ademo;
+
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class Demo{
+
+	public static void main(String[] args) {
+		Map<Integer, String> set= new TreeMap<Integer, String>();
+		set.add(23, "ghh");
+		set.add(56, "hyug");
+		set.add(263);
+		set.add(566);
+		Collections.addAll(set, 45, 666);
+		System.out.println(set);
+		
+		
+	}
+
+}

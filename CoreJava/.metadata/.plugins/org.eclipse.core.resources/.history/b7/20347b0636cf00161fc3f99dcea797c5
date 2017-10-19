@@ -1,0 +1,14 @@
+package services;
+
+import dao.UserDAO;
+import models.User;
+
+public class Validate {
+	
+	public User checkUser(){
+		
+		return new User;
+		
+	}
+
+}

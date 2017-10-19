@@ -1,0 +1,31 @@
+package models;
+
+import java.util.Date;
+
+import org.omg.CORBA.DATA_CONVERSION;
+
+public class HistoryParking {
+	private Date exitTime;
+	private int billAmount;
+	private Parking park;
+	
+	public String getExitTime() {
+		return exitTime;
+	}
+	public int getBillAmount() {
+		return billAmount;
+	}
+	public Parking getPark() {
+		return park;
+	}
+	public void setExitTime(Date exitTime) {
+		this.exitTime = exitTime;
+	}
+	public void setBillAmount(int billAmount) {
+		this.billAmount = billAmount;
+	}
+	public void setPark(Parking park) {
+		this.park = park;
+	}
+
+}

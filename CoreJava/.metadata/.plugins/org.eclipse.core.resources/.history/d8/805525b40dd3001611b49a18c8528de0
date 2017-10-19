@@ -1,0 +1,31 @@
+package ademo;
+
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Demo extends Thread {
+
+	public static void main(String[] args) {
+		List<Integer> l= new ArrayList<Integer>();
+		//Collections.addAll(c, elements)
+		my m= new my();
+		m.test("hello");
+		
+	}
+
+}
+class my{
+	<t> void test(t tt){
+		System.out.println(tt);
+	}
+}

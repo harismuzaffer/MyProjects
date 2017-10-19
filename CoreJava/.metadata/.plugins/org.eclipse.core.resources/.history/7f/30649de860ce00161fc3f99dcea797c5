@@ -1,0 +1,22 @@
+package ademo;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(new Demo.getClass());
+	}
+	public void run() {
+		System.out.println("trnjug");
+		
+	}
+
+}
+class R {
+}

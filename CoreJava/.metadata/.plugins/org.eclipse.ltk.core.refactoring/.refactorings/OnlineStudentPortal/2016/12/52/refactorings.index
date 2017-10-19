@@ -1,0 +1,27 @@
+1482406360231	Delete element
+1482408164359	Rename resource 'MainPage.jsp'
+1482427942664	Rename resource 'Index.jsp'
+1482427948990	Rename resource 'Create.jsp'
+1482427953860	Rename resource 'CreateResponse.jsp'
+1482427958745	Rename resource 'Delete.jsp'
+1482427964107	Rename resource 'DeleteResponse.jsp'
+1482427968159	Rename resource 'Display.jsp'
+1482427972693	Rename resource 'Footer.jsp'
+1482427977029	Rename resource 'Header.html'
+1482427981274	Rename resource 'Main.jsp'
+1482427985231	Rename resource 'Modify.jsp'
+1482427990776	Rename resource 'ModifyResponse.jsp'
+1482431169136	Delete element
+1482469209152	Rename resource 'index.jsp'
+1482469784451	Rename resource 'index1.jsp'
+1482472328649	Rename resource 'Logout.jsp'
+1482478148824	Delete element
+1482551383657	Move 'java.png' to 'WebContent'
+1482551595149	Move 'java.jpg' to 'WebContent'
+1482551607440	Delete element
+1482551618807	Rename resource 'java.jpg'
+1482551797184	Delete element
+1482551801712	Rename resource 'java.jpg'
+1482563249533	Delete element
+1482571637949	Delete element
+1482571645019	Rename type 'Listener'

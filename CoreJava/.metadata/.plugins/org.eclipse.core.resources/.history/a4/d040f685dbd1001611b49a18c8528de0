@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>check slot</title>
+</head>
+<body>
+
+
+<form action="checkSlot" method="post">
+
+Reg no <sinput type="number" name="slotid">
+<input type="submit" value="Deallocate">
+
+</form>
+
+</body>
+</html>

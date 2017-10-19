@@ -1,0 +1,18 @@
+package ademo;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StringBuffer g= new StringBuffer("hellou");
+		StringBuffer b= g.reverse();
+		System.out.println(b);
+		
+	}
+
+}

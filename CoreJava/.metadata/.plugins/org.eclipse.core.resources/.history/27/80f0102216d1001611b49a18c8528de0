@@ -1,0 +1,12 @@
+package services;
+
+import models.HistoryParking;
+
+public class Deallocate {
+	
+	public HistoryParking updateHistoryParking(int slodId){
+		
+		
+	}
+
+}

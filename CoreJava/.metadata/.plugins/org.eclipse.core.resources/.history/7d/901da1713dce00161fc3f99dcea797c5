@@ -1,0 +1,13 @@
+package ademo;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s="ju";
+		s.concat("fdd");
+		System.out.println(s);
+	}
+
+}

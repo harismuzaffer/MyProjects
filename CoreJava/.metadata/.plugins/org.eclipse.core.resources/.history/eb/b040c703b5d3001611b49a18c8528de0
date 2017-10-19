@@ -1,0 +1,29 @@
+package ademo;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Demo extends Thread{
+
+	public static void main(String[] args) throws IOException {
+		hh t= new hh();
+		File f= new File("/he/ju/hj");
+		System.out.println(f.getClass());
+	}
+	public void run(){
+		System.out.println("heooolle");
+		System.out.println(Thread.currentThread().getName());
+	}
+}
+class hh implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("hhhh");
+		System.out.println(Thread.currentThread().getName());
+	}
+	
+}

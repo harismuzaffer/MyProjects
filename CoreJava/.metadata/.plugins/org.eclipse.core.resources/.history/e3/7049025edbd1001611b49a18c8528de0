@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>check slot</title>
+</head>
+<body>
+
+
+<form action="checkSlot.jsp" method="post">
+
+<input type="number" name="slotid">
+<input type="submit" value="Deallocate">
+
+</form>
+
+</body>
+</html>

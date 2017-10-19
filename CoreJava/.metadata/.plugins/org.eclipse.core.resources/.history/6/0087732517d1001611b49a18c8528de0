@@ -1,0 +1,21 @@
+package services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import dao.HistoryDAO;
+import dao.ParkingDAO;
+import models.HistoryParking;
+
+public class Deallocate {
+	
+	@Autowired
+	HistoryDAO hdao;
+	@Autowired
+	ParkingDAO pdao;
+	
+	public HistoryParking updateHistoryParking(int slodId){
+		
+		pdao.getParkInfoBySlot(slotId);
+	}
+
+}

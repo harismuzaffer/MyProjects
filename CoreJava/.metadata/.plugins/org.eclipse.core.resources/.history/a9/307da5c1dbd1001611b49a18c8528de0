@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>check slot</title>
+</head>
+<body>
+
+
+<form action="checkSlot" method="post">
+
+Reg no <sinput type="text" name="regno">
+<input type="submit" value="Check">
+
+</form>
+
+${parked }
+
+</body>
+</html>

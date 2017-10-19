@@ -1,0 +1,36 @@
+package controllers;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import dao.UserDAO;
+
+@Controller
+public class UserController {
+
+	@Autowired
+	UserDAO udao;
+	
+	@RequestMapping("/allocateForm")
+	public String allocateForm(){
+		
+		return "allocateForm";
+	}
+	
+	@RequestMapping("/allocate")
+	public String allocate(@RequestParam String mno, @RequestParam String stype, HttpServletRequest request){
+		
+		String s= "Allocated Successfully";
+		HttpSession session= request.getSession();
+		
+		session.setAttribute("allocated", s);
+		return "allocated";
+	}
+	
+}

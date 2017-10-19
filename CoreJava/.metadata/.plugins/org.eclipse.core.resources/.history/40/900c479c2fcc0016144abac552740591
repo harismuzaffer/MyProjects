@@ -1,0 +1,31 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.Scanner;
+
+public class GradeCalculator {
+
+	public static void main(String []args){
+
+		//Scanner in= new Scanner(System.in);
+		HashMap<Integer, Integer> details= new HashMap<Integer, Integer>();
+		details.put(122, 89);
+		details.put(123, 69);
+		details.put(152, 99);
+		details.put(172, 69);
+		
+		TreeMap<Integer, String> grade= Usermaincode.calculateGrade(details);
+	
+	}
+}
+
+
+class Usermaincode
+{
+	public static TreeMap<Integer, String> calculateGrade (HashMap<Integer,Integer> hm)
+	{
+		//fill your code here
+	
+	}
+}

@@ -1,0 +1,16 @@
+package aop;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+
+@As
+@Component
+public class LoggingAspect {
+	
+	@Before
+	public void logAdviceforDeposit(){
+		System.out.println("logging before");
+	}
+
+}

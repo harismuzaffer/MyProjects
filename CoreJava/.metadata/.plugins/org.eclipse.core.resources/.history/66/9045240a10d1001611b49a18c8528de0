@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Deallocate form</title>
+</head>
+<body>
+
+<form action="dellocate">
+
+<input type="number" name="vtype">
+<input type="submit" value="Deallocate">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.HashMap;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.Scanner;
+
+public class GradeCalculator {
+
+	public static void main(String []args){
+
+		//Scanner in= new Scanner(System.in);
+		HashMap<Integer, Integer> details= new HashMap<Integer, Integer>();
+		details.put(122, 89);
+		details.put(123, 69);
+		details.put(152, 99);
+		details.put(172, 69);
+		
+		TreeMap<Integer, String> grade= Usermaincode.calculateGrade(details);
+	
+	}
+}
+
+
+class Usermaincode
+{
+	public static TreeMap<Integer, String> calculateGrade (HashMap<Integer,Integer> hm){
+	
+		TreeMap<Integer, String> grade= new TreeMap<Integer, String>();
+		int n= hm.size();
+		Set keys= hm.keySet();
+		int arr[]= new int[n];
+		
+		Iterator<Integer> it= keys.iterator();
+		for(int i=0; it.hasNext(); i++){
+			arr[i]= it.next();
+		}
+		Collection<Integer> values= hm.values();
+		for(int i=0; i<hm.size(); i++){
+			grade.put(hm.ge, value)
+		}
+	}
+}

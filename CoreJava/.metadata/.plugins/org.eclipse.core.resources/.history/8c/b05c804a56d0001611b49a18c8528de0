@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Allocate</title>
+</head>
+<body>
+
+<form action="allocate" method="post">
+
+	MobileNo<input type="text" name="mno"> <br>
+	RegNo<input type="text" name="reno"> <br>
+	SlotType<input type="text" name="stype"> <br>
+	<input type="submit" value="Allocate">
+	
+</form>
+
+
+</body>
+</html>

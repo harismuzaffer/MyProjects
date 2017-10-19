@@ -1,0 +1,22 @@
+package controllers;
+import model.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import dao.CountryDao;
+
+public class CountryHandler {
+
+	@Autowired
+	CountryDao c;
+	
+	@RequestMapping("/listCountries")
+	public String listCountries(Model model){
+	
+		List<Country> ctryList= c.getCountries();
+		return "countryList"; 
+	}
+}
+

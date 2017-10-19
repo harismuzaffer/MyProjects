@@ -1,0 +1,22 @@
+package controlllers;
+
+import model.Country;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import dao.UserDAO;
+
+@Controller
+public class LoginController {
+	
+	UserDAO udao;
+	@RequestMapping("/validate")
+	public String validate(@ModelAttribute("user")User user){
+		
+		udao.SelectUser(userId, password)
+		return "/admin/admin";
+	}
+	
+}

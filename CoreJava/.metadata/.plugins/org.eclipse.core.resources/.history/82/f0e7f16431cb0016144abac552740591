@@ -1,0 +1,10 @@
+package com.ibm;
+
+public class First {
+
+	public void welcome(){
+		
+		System.out.println("welcome to spring");
+	}
+	
+}

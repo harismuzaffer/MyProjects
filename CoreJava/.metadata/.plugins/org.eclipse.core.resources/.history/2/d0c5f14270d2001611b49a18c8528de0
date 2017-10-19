@@ -1,0 +1,27 @@
+package ademo;
+
+import java.util.*;
+
+public class StringOccurancesII {
+
+	public static void main(String[]args){
+
+		Scanner in= new Scanner(System.in);
+		String s1= in.nextLine();
+		String s2= in.nextLine();
+		System.out.print(getSubstring(s1, s2));
+		
+	}
+	
+	public static int getSubstring(String s, String s1)
+	{
+		
+		int c=0;
+		String ss= s1;
+		System.out.println(ss.contains(s));
+		ss= ss.replace(s, "");
+		System.out.println(ss);
+		return 1;
+		
+	}
+}

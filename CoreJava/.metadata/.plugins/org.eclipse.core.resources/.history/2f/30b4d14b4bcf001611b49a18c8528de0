@@ -1,0 +1,65 @@
+package dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import models.HistoryParking;
+import models.User;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class UserDAO 
+{
+	private JdbcTemplate template;
+
+	public JdbcTemplate getTemplate() 
+	{
+		return template;
+	}
+	
+	@Autowired
+	public void setTemplate(JdbcTemplate template)
+	{
+		this.template = template;
+	}
+	
+	public User SelectUser(String userId,String password)
+	{
+		String sql="select * from PARKING_USERS where USER_ID=? and PASSWORD=?";
+		return template.queryForObject(sql,new UserMapper(),userId,password);
+		
+	}
+	
+	public boolean AddUser(User user)
+	{
+		String sql="insert into PARKING_USERS values(?,?,?,?)";
+		String userId=user.getUserId();
+		String password=user.getPassword();
+		String userRole=user.getUserRole();
+		String userName=user.getUserName();
+		int count=template.update(sql,userId,password,userRole,userName);
+		if(count>0)
+			return true;
+		return false;
+	}
+	
+	public class UserMapper implements RowMapper<User>
+	{
+	
+		@Override
+		public User mapRow(ResultSet result, int rownum)throws SQLException
+		{
+			User user = new User();
+			user.setUserId(result.getString("USER_ID"));
+			user.setPassword(result.getString("PASSWORD"));
+			user.setUserRole(result.getString("USER_ROLE"));
+			user.setUserName(result.getString("USER_NAME"));
+			return user;
+		}
+	}
+	}
+	

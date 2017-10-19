@@ -1,0 +1,43 @@
+package controllers;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import models.Parking;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import dao.ParkingDAO;
+import dao.UserDAO;
+
+@Controller
+public class UserController {
+
+	@Autowired
+	ParkingDAO pdao;
+	
+	@RequestMapping("/allocateForm")
+	public String allocateForm(){
+		
+		return "allocateForm";
+	}
+	
+	@RequestMapping(value="/allocae", method=RequestMethod.POST)
+	public String allocate(@RequestParam("mno") String mno, @RequestParam("regno") String regno, @RequestParam("vtype") String vtype , HttpServletRequest request){
+		
+		String s= "Allocated Successfully";
+		String ss= "Allocation Failed";
+		HttpSession session= request.getSession();
+		if(pdao.allocateParking(mno, regno, vtype))
+			session.setAttribute("allocated", s);
+		else
+			session.setAttribute("allocated", ss);
+		return "allocated";
+	}
+	
+}
