@@ -1,2 +1,2 @@
 # MyProjects
-My small projects based on spring mvc
+Code snippets and mini projects using Java written during my initial career as a developer
